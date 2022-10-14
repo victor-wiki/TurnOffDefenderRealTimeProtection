@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 
 namespace TurnOffDefenderRealTimeProtection
@@ -29,9 +29,7 @@ namespace TurnOffDefenderRealTimeProtection
                     {
                         proc.StandardInput.WriteLine(cmd);
                     }
-                }
-
-                proc.Kill();
+                }                
             }
         }
     }
