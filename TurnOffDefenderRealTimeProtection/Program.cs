@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -22,7 +22,7 @@ namespace TurnOffDefenderRealTimeProtection
 
             string fileName = "cmd.exe";
 
-            var commands = new string[] { "powershell.exe", "Set-MpPreference -DisableRealtimeMonitoring $true" };
+            var commands = new string[] { "powershell.exe", "Set-MpPreference -DisableRealtimeMonitoring $true" ,"exit" };
 
             ProcessHelper.ExecuteCommands(fileName, "", commands, Process_ErrorDataReceived);
         }
